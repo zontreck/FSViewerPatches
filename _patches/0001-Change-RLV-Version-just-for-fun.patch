@@ -1,0 +1,42 @@
+From 8cd584ab5906172bf5fffd17083cdc98ef72025b Mon Sep 17 00:00:00 2001
+From: Zontreck <tara@zontreck.dev>
+Date: Wed, 18 Nov 2020 08:13:39 -0700
+Subject: [PATCH] Change RLV Version just for fun
+
+---
+ indra/newview/rlvdefines.h | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/indra/newview/rlvdefines.h b/indra/newview/rlvdefines.h
+index 2ae7d82b56..ca45e811c3 100644
+--- a/indra/newview/rlvdefines.h
++++ b/indra/newview/rlvdefines.h
+@@ -25,10 +25,10 @@
+ //
+ 
+ // Version of the specifcation we report
+-const S32 RLV_VERSION_MAJOR = 3;
+-const S32 RLV_VERSION_MINOR = 3;
+-const S32 RLV_VERSION_PATCH = 3;
+-const S32 RLV_VERSION_BUILD = 0;
++const S32 RLV_VERSION_MAJOR = 11;
++const S32 RLV_VERSION_MINOR = 0;
++const S32 RLV_VERSION_PATCH = 8;
++const S32 RLV_VERSION_BUILD = 4;
+ 
+ // Version of the specifcation we report (in compatibility mode)
+ const S32 RLV_VERSION_MAJOR_COMPAT = 2;
+@@ -230,8 +230,8 @@ enum ERlvBehaviour {
+ 	RLV_BHVR_SETCAM_TEXTURES,		// Replaces all textures with the specified texture (or the default unrezzed one)
+ 	RLV_BHVR_SETCAM_UNLOCK,			// Forces the camera focus to the user's avatar
+ 	// Camera (behaviours - deprecated)
+-	RLV_BHVR_CAMZOOMMIN,			// Enforces a minimum - vertical - FOV angle of 60° / multiplier
+-	RLV_BHVR_CAMZOOMMAX,			// Enforces a maximum - vertical - FOV angle of 60° / multiplier
++	RLV_BHVR_CAMZOOMMIN,			// Enforces a minimum - vertical - FOV angle of 60ï¿½ / multiplier
++	RLV_BHVR_CAMZOOMMAX,			// Enforces a maximum - vertical - FOV angle of 60ï¿½ / multiplier
+ 	// Camera (reply)
+ 	RLV_BHVR_GETCAM_AVDIST,			// Returns the current minimum distance between the camera and the user's avatar
+ 	RLV_BHVR_GETCAM_AVDISTMIN,		// Returns the active (if any) minimum distance between the camera and the user's avatar
+-- 
+2.29.2.windows.2
+
